@@ -1,4 +1,9 @@
 .container{
-    max-width: 1088px;
+    max-width: map-get($breakpoint , 'lg' );
     margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    @include phone{
+        max-width: map-get($breakpoint , 'sm' );
+    }
 }
