@@ -1,3 +1,8 @@
-@import 'bootstrap/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC:wght@400;700&family=Wendy+One&display=swap');
+@import 'reset';
+@import 'variables';
+@import 'base';
 @import 'module';
-@import 'index';
+@import 'utilities';
+@import 'custom';
+@import 'layout';

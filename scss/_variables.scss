@@ -1,0 +1,33 @@
+$primary:    #56C4C5;
+$secondary:  #221E1F;
+$info-color: #221E1F;
+$btn-color:  #FF5D50;
+$font-primary: "Noto Sans TC";
+$font-secondary: "Comfortaa";
+$font-third: "Wendy One";
+$container: 1088px;
+// @for $spacer from 1 through 12 {      
+//     $spacers: ($spacer * 0.5)rem;    
+// }
+
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+);
+
+$breakpoint: (
+  "lg": $container + 40px,
+  "md": 768px,
+  "sm":  576px
+);
+$direction: (
+  "t": top,
+  "r": right,
+  "b": bottom,
+  "l": left
+);

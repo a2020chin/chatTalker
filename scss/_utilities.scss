@@ -1,0 +1,176 @@
+@for $distance from 0 through 12 {
+    .p-#{$distance} {
+        padding: ($distance * 0.5) + rem;
+    }
+    .m-#{$distance} {
+        margin: ($distance * 0.5) + rem;
+    }
+}
+
+@each $dir, $dir-value in $direction {
+    @for $distance from 0 through 12 {
+        .m#{$dir}-#{$distance} {
+            margin-#{$dir-value}: ($distance * 0.5) + rem;
+        }
+
+        .p#{$dir}-#{$distance} {
+            padding-#{$dir-value}: ($distance * 0.5) + rem;
+        }
+    }
+}
+
+@each $size, $size-value in $breakpoint {
+    @media screen and (max-width: $size-value) {
+        @each $dir, $dir-value in $direction {
+            @for $min-distance from 0 through 8 {
+                .m#{$dir}-#{$size}-#{$min-distance} {
+                    margin-#{$dir-value}: #{$min-distance * 0.5} + rem;
+                }
+
+                .p#{$dir}-#{$size}-#{$min-distance} {
+                    padding-#{$dir-value}: #{$min-distance * 0.5} + rem;
+                }
+            }
+        }
+    }
+}
+
+@for $distance from 0 through 12 {
+    .px-#{$distance} {
+        padding-right: ($distance * 0.5) + rem;
+        padding-left: ($distance * 0.5) + rem;
+    }
+    .py-#{$distance} {
+        padding-top: ($distance * 0.5) + rem;
+        padding-bottom: ($distance * 0.5) + rem;
+    }
+    .mx-#{$distance} {
+        margin-right: ($distance * 0.5) + rem;
+        margin-left: ($distance * 0.5) + rem;
+    }
+    .my-#{$distance} {
+        margin-top: ($distance * 0.5) + rem;
+        margin-bottom: ($distance * 0.5) + rem;
+    }
+}
+
+@each $size, $size-value in $breakpoint {
+    @media screen and (max-width: $size-value) {
+        @for $distance from 0 through 12 {
+            .px-#{$size}-#{$distance} {
+                padding-right: ($distance * 0.5) + rem;
+                padding-left: ($distance * 0.5) + rem;
+            }
+
+            .py-#{$size}-#{$distance} {
+                padding-top: ($distance * 0.5) + rem;
+                padding-bottom: ($distance * 0.5) + rem;
+            }
+        }
+    }
+}
+
+
+
+@for $size from 1 through 8{
+    .fw-#{$size}{
+        font-size: ($size * 0.5) + rem;
+    }
+}
+
+
+@for $roughness from 1 through 8{
+.fw-#{$roughness} {
+    font-weight: ($roughness * 100);
+  }
+}
+
+.w-100{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+  
+.text-right{
+    text-align: right;
+}
+  
+.text-left{
+    text-align: left;
+}
+
+.d-none{
+    display: none;
+}
+  
+.d-flex{
+    display: flex;
+}
+  
+.d-inline-block{
+    display: inline-block;
+}
+  
+.d-block{
+    display: block;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+  
+.justify-content-space-between{
+    justify-content: space-between;
+}
+  
+.align-items-center{
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.p-fixed{
+    position: fixed;
+}
+
+.p-sticky{
+    position: sticky;
+}
+
+.vertical-sub{
+    vertical-align: sub;
+}
+
+.margin-center{
+    margin: 0 auto;
+}
+
+.color-white{
+    color: #fff;
+}
+
+.color-primary{
+    color: $primary;
+}
+  
+.color-secondary{
+    color: $secondary;
+}

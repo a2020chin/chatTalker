@@ -1,0 +1,17 @@
+@mixin pc{
+    @media screen and (max-width: map-get($breakpoint, "lg")) {
+        @content;
+    }
+}
+
+@mixin pad{
+    @media screen and (max-width: map-get($breakpoint, "md")) {
+        @content;
+    }
+}
+
+@mixin phone{
+    @media screen and (max-width: map-get($breakpoint, "sm")) {
+        @content;
+    }
+}

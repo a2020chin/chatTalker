@@ -1,7 +1,14 @@
-body{
+html {
     scroll-behavior: smooth;
 }
-a{
-    text-decoration: none;
-    transition: 0.3s;
+  
+body {
+  font-family: $font-primary, sans-serif;
+  color: $info-color;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
 }

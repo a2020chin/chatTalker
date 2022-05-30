@@ -2,10 +2,17 @@
 	text-indent: 101%;
 	overflow: hidden;
 	white-space: nowrap;
+    & a{
+        display: block;
+        width: 218px;
+        height: 40px;
+        background: url(../images/logo.png) no-repeat;
+        background-size: cover;
+    }
 }
-.logo a {
+
+.btn{
     display: block;
-    width: 218px;
-    height: 40px;
-    background: url(../images/logo.png) no-repeat;
+    background: $btn-color;
+    border-radius: 50rem;
 }
