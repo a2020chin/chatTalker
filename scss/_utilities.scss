@@ -70,19 +70,30 @@
     }
 }
 
-
+@each $size,  $size-value in $lineheight{
+    .lh-#{$size}{
+        line-height: $size-value;
+    }
+}
 
 @for $size from 1 through 8{
-    .fw-#{$size}{
+    .fz-#{$size}{
         font-size: ($size * 0.5) + rem;
     }
 }
 
 
 @for $roughness from 1 through 8{
-.fw-#{$roughness} {
-    font-weight: ($roughness * 100);
-  }
+    .fw-#{$roughness} {
+        font-weight: ($roughness * 100);
+    }
+}
+
+.fz-px-18{
+    font-size: 18px;
+}
+.fz-px-20{
+    font-size: 20px;
 }
 
 .w-100{
