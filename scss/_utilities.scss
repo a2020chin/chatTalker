@@ -76,6 +76,7 @@
     }
 }
 
+//字體大小
 @for $size from 1 through 8{
     .fz-#{$size}{
         font-size: ($size * 0.5) + rem;
@@ -83,17 +84,43 @@
 }
 
 
-@for $roughness from 1 through 8{
-    .fw-#{$roughness} {
-        font-weight: ($roughness * 100);
+//字體顏色
+@each $colors,  $color-value in $color{
+    .color-#{$colors}{
+        color: $color-value;
     }
 }
+
+//背景
+@each $colors,  $color-value in $color{
+    .bg-#{$colors}{
+        background: $color-value;
+    }
+}
+
+//按鈕
+@each $colors,  $color-value in $color{
+    .btn-#{$colors}{
+        display: inline-block;
+        border-radius: 50rem;
+        background: $color-value;
+        cursor: pointer;
+        &:hover{
+            background: darken($color-value, 25%);
+        }
+    }
+}
+
 
 .fz-px-18{
     font-size: 18px;
 }
 .fz-px-20{
     font-size: 20px;
+}
+
+.fw-b{
+    font-weight: bold;
 }
 
 .w-100{
@@ -119,7 +146,9 @@
 .d-flex{
     display: flex;
 }
-  
+.d-grid{
+    display: grid;
+}  
 .d-inline-block{
     display: inline-block;
 }
@@ -134,6 +163,10 @@
   
 .justify-content-space-between{
     justify-content: space-between;
+}
+
+.justify-content-space-around{
+    justify-content: space-around;
 }
   
 .align-items-center{
@@ -174,14 +207,10 @@
     margin: 0 auto;
 }
 
-.color-white{
-    color: #fff;
+.flex-wrap{
+    flex-wrap: wrap;
 }
 
-.color-primary{
-    color: $primary;
-}
-  
-.color-secondary{
-    color: $secondary;
+.word-wrap-normal{
+    word-wrap: normal;
 }

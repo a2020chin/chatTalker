@@ -4,7 +4,7 @@ html {
   
 body {
   font-family: $font-primary, sans-serif;
-  color: $info-color;
+  color: map-get($color , "info-color");
   line-height: 1.5;
 }
 

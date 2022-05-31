@@ -1,9 +1,50 @@
 body{
-    background: url(../images/ball01.svg) no-repeat -222px calc(100vh - 180px), 
-    url(../images/ball02.svg) no-repeat calc(100vw - 100px);
-    background-size: 360px 360px, 310px 310px;
+    background: url(../images/ball01.svg) no-repeat -222px calc(769px - 180px), 
+    url(../images/ball02.svg) no-repeat calc(100vw - 100px),
+    url(../images/bg_home.svg) no-repeat right top;
+    background-size: 360px 360px, 310px 310px, 851.5px 768px;
 }
 .bannerImg{
     width: 532px;
     height: 534px;
+}
+.cardImg{
+    width: 260px;
+    height: 260px;
+}
+.platformImg{
+    width: 90px;
+    height: 90px;
+}
+.scrolltop{
+    display: inline-block;
+    position: fixed;
+    z-index: 99;
+    bottom: 23px;
+    right: 48px;
+    width: 71px;
+    height: 71px;
+    font-family: $font-third, serif;
+    font-size: 18px;
+    line-height: 19px;
+    padding: 26px 17px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.nav{
+    margin-bottom: 30px;
+}
+.heroBanner{
+    margin-bottom: 217px;
+}
+.platform{
+    margin-bottom: 100px;
+}
+.platformInfo{
+    width: 33.33333%;
+}
+.situation{
+    margin-bottom: 100px;
 }

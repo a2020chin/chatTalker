@@ -10,9 +10,14 @@
         background-size: cover;
     }
 }
-
-.btn{
-    display: block;
-    background: $btn-color;
-    border-radius: 50rem;
+.card{
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px #00000014;
+    overflow: hidden;
+}
+.round{
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px #00000014;
 }

@@ -1,11 +1,17 @@
-$primary:    #56C4C5;
-$secondary:  #221E1F;
-$info-color: #221E1F;
-$btn-color:  #FF5D50;
 $font-primary: "Noto Sans TC";
 $font-secondary: "Comfortaa";
 $font-third: "Wendy One";
 $container: 1088px;
+
+$color: (
+  "primary":    #56C4C5,
+  "secondary":  #221E1F,
+  "info-color": #221E1F,
+  "navbtn":     #FF5D50,
+  "platform-p": #747474,
+  "white":      #fff,
+  "black":      #000,
+);
 
 $breakpoint: (
   "lg": $container + 32px,
