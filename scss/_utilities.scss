@@ -1,3 +1,41 @@
+//租造格線系統
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: (-.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
+    margin-left: (-.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
+    > *{
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        flex: 0 0 auto;
+        width: percentage(($i / $columns));
+        padding-right: (.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
+        padding-left: (.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
+    }
+}
+
+@each $size, $size-value in $breakpoint {
+    @media screen and (max-width: $size-value) {
+        @for $i from 1 through $columns {
+            .col-#{$size}-#{$i} {
+                flex: 0 0 auto;
+                width: percentage(($i / $columns));
+                padding-right: (.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
+                padding-left: (.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
+            }
+        }
+    }
+}
+
+//margin、padding設定
+
 @for $distance from 0 through 12 {
     .p-#{$distance} {
         padding: ($distance * 0.5) + rem;
@@ -111,51 +149,23 @@
     }
 }
 
-//租造格線系統
-
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: (-.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
-    margin-left: (-.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
-    > *{
-        flex-shrink: 0;
-        width: 100%;
-        max-width: 100%;
-    }
-}
-
-@for $i from 1 through $columns {
-    .col-#{$i} {
-        flex: 0 0 auto;
-        width: percentage(($i / $columns));
-        padding-right: (.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
-        padding-left: (.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
-    }
-}
-
-@each $size, $size-value in $breakpoint {
-    @media screen and (max-width: $size-value) {
-        @for $i from 1 through $columns {
-            .col-#{$size}-#{$i} {
-                flex: 0 0 auto;
-                width: percentage(($i / $columns));
-                padding-right: (.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
-                padding-left: (.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
-            }
-        }
-    }
-}
 
 
 
 
+//微調
 .fz-px-18{
     font-size: 18px;
 }
 .fz-px-20{
     font-size: 20px;
 }
+.py-px-12{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+
 
 .fw-b{
     font-weight: bold;
@@ -252,3 +262,5 @@
 .word-wrap-normal{
     word-wrap: normal;
 }
+
+
