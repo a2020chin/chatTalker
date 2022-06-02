@@ -116,6 +116,8 @@
 .row{
     display: flex;
     flex-wrap: wrap;
+    margin-right: (-.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
+    margin-left: (-.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
     > *{
         flex-shrink: 0;
         width: 100%;
@@ -127,6 +129,8 @@
     .col-#{$i} {
         flex: 0 0 auto;
         width: percentage(($i / $columns));
+        padding-right: (.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
+        padding-left: (.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
     }
 }
 
@@ -136,6 +140,8 @@
             .col-#{$size}-#{$i} {
                 flex: 0 0 auto;
                 width: percentage(($i / $columns));
+                padding-right: (.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
+                padding-left: (.5 * $grid-gutter-width); // stylelint-disable-line function-disallowed-list
             }
         }
     }

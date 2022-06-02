@@ -1,8 +1,17 @@
+
 $font-primary: "Noto Sans TC";
 $font-secondary: "Comfortaa";
 $font-third: "Wendy One";
 $container: 1088px;
+
+
+$variable-prefix:             bs- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix:                      $variable-prefix !default;
+
+
 $columns:   12;
+$grid-gutter-width: 1.5rem ;
+
 
 $color: (
   "primary":    #56C4C5,
