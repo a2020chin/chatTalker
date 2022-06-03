@@ -23,4 +23,41 @@
     overflow: hidden;
     box-shadow: 0px 2px 10px #00000014;
 }
-
+.underline{
+    &::after{
+        content: "";
+        display: block;
+        margin-top: 1.5rem;
+        background: #dddddd;
+        width: 100%;
+        height: 1px;
+        text-decoration: underline;
+    }
+    &-program::after{
+        content: "";
+        display: block;
+        margin-top: 1rem;
+        background: #dddddd;
+        width: 100%;
+        height: 1px;
+        text-decoration: underline;
+    }
+}
+.btn-list{
+    display: flex;
+    justify-content: center;
+    .btn-outline{
+        display: inline-block;
+        padding: 12px 32px;
+        font-size: 18px;
+        border: 1px solid #56C4C5;
+        color: map-get($color, "primary");
+        cursor: pointer;
+        border-radius: 27px;
+        margin-right: 16px;  
+    }
+    >.active{
+        background: map-get($color, "primary");
+        color: map-get($color, "white");
+    }
+}

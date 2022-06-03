@@ -1,8 +1,16 @@
 body{
+    position: relative;
+}
+.index-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
     background: url(../images/ball01.svg) no-repeat -222px calc(769px - 180px), 
     url(../images/ball02.svg) no-repeat calc(100vw - 210px) 1694px,
-    url(../images/bg_home.svg) no-repeat right top;
-    background-size: 360px 360px, 310px 310px, 851.5px 768px;
+    url(../images/bg_home.svg) no-repeat right top,
+    url(../images/ball03.svg) no-repeat 360px 2740px;
+    background-size: 360px 360px, 310px 310px, 851.5px 768px,150px 150px;
 }
 .bannerImg{
     width: 532px;
@@ -13,16 +21,13 @@ body{
     height: 260px;
     border-radius: 12px 12px 0 0;
 }
-.platformImg{
-    width: 90px;
-    height: 90px;
-}
+
 .scrolltop{
     display: inline-block;
     position: fixed;
     z-index: 99;
-    bottom: 23px;
-    right: 48px;
+    bottom: 100px;
+    right: 100px;
     width: 71px;
     height: 71px;
     font-family: $font-third, serif;
@@ -35,42 +40,48 @@ body{
 }
 
 .nav{
-    margin-bottom: 30px;
+    margin-bottom: 0;
 }
+
 .heroBanner{
+    margin-top: 30px;
     margin-bottom: 217px;
 }
 .platform{
     margin-bottom: $section-margin;
-}
-.platformInfo{
-    width: 33.33333%;
+    &-info{
+        width: 33.3333%;
+    }
+    &-img{
+        width: 90px;
+        height: 90px
+    }
 }
 
 .situation{
     margin-bottom: $section-margin;
 }
-
-.underline{
-    &::after{
-        content: "";
-        display: block;
-        margin-top: 1.5rem;
-        background: #dddddd;
-        width: 100%;
-        height: 1px;
-        text-decoration: underline;
-    }
+.feature{
+    margin-bottom: $section-margin;
 }
+
+
 
 .praise{
     margin-bottom: $section-margin;
+    >h2{
+        margin-bottom: 104px;
+    }
     &-img{
         top: -50px;
+        box-shadow: 0px 2px 10px #00000014;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
         img{
             width: 80px;
             height: 80px;
-            border-radius: 100%;
         }
     }
 }
@@ -88,7 +99,7 @@ body{
             margin-right: 0.5rem;
         }
     }
-    .active{
+    >.active{
         width: 16px;
         background: #FFD153;
     }
@@ -102,4 +113,82 @@ body{
 }
 .copyright{
     background: #F5F5F5;
+}
+
+
+
+
+//pirce.html css
+.pirce-bannerImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+.pirce-bg{
+    background: url(../images/banner.svg) no-repeat right top;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 470px;
+        z-index: -1;
+        background: #F7F9FD;
+        border-radius: 0px 0px 0px 470px;
+    }
+}
+.pirce-banner{
+    padding-top: 92px;
+    padding-bottom: 180px + $section-margin;
+}
+
+.program{
+    margin-bottom: $section-margin;
+    &-box{
+        background: #F5F5F5;
+        padding: 1.5rem 2rem;
+        border-radius: 12px;
+        h4{
+            font-family: $font-secondary;
+            sub{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+.que{
+    margin-bottom: 100px;
+    &-item{
+        &-q{
+            cursor: pointer;
+            .minus{
+                display: none;
+            }
+        }
+        &-a{
+            display: none;
+            transform: translateY(-50px);
+        }
+    }
+    >.active{
+        .que-item-q{
+            cursor: pointer;
+            h3{
+                font-weight: bold;
+                color: map-get($color, 'primary');
+            }
+            .plus{
+                display: none;
+            }
+            .minus{
+                display: block;
+            }
+        }
+        .que-item-a{
+            display: block;
+            transform: translateY(0px);
+        }  
+    }
 }
