@@ -3,7 +3,35 @@
     margin: 0 auto;
     padding-left: 1rem;
     padding-right: 1rem;
+    h1{
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 70px;
+    }
+    h2{
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 46px;
+    }
+    h3{
+        font-weight: bold;
+    }
     @include phone{
         max-width: map-get($breakpoint , 'sm' );
+        padding: 0 20px;
+        h1{
+            font-size: 2rem;
+            line-height: 46px;
+        }
+        h2{
+            font-size: 28px;
+            line-height: 40px;
+        }
+        h3{
+            font-size: 1rem;
+        }
+        p{
+            font-size: 1rem;
+        }
     }
 }

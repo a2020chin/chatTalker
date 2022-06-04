@@ -62,11 +62,11 @@
         @each $dir, $dir-value in $direction {
             @for $min-distance from 0 through 8 {
                 .m#{$dir}-#{$size}-#{$min-distance} {
-                    margin-#{$dir-value}: #{$min-distance * 0.5} + rem;
+                    margin-#{$dir-value}: #{$min-distance * 0.5}rem;
                 }
 
                 .p#{$dir}-#{$size}-#{$min-distance} {
-                    padding-#{$dir-value}: #{$min-distance * 0.5} + rem;
+                    padding-#{$dir-value}: #{$min-distance * 0.5}rem;
                 }
             }
         }
@@ -172,6 +172,9 @@
 
 .fw-b{
     font-weight: bold;
+}
+.fw-n{
+    font-weight: normal;
 }
 
 .w-100{
