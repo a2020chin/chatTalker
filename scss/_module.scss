@@ -71,7 +71,7 @@
         background: map-get($color, "primary");
         color: map-get($color, "white");
     }
-    @include phone{
+    @include pad{
         overflow-x: auto;
         justify-content: normal;
         .btn-outline{

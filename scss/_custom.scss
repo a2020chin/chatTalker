@@ -16,8 +16,8 @@
     h3{
         font-weight: bold;
     }
-    @include phone{
-        max-width: map-get($breakpoint , 'sm' );
+    @include pad{
+        max-width: map-get($breakpoint , 'md' );
         padding: 0 20px;
         h1{
             font-size: 2rem;

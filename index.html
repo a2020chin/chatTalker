@@ -12,14 +12,15 @@
         href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Noto+Sans+TC:wght@400;700&family=Wendy+One&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="scss/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
     <div class="index-bg"></div>
-    <a href="#" class="scrolltop btn-primary">top</a>
-    <header class="header-sm-border">
+    <a href="#" class="scrolltop btn-primary" id="top">top</a>
+    <header class="header-md-border">
         <div class="container">
-            <nav class="nav py-3 py-sm-2">
+            <nav class="nav py-3 py-md-2">
                 <div class="logo"><a href="index.html">chatTalker</a></div>
                 <ul>
                     <li>
@@ -32,26 +33,27 @@
     <main class="container">
         <section class="heroBanner">
             <div>
-                <h3 class="color-primary fz-px-18 mb-1 ">ChatTalker 最全面的聊天機器人</h3>
-                <h1 class="mb-2">你愛我像誰？<br>扮演什麼角色我都會</h1>
-                <p class="fz-px-20 lh-banner-p mb-sm-4">Facebook、Instagram、LINE 聊天機器人解決方案</p>
+                <h3 data-aos="fade-right" class="color-primary fz-px-18 mb-1">ChatTalker 最全面的聊天機器人</h3>
+                <h1 data-aos="fade-right" data-aos-delay="200" class="mb-2">你愛我像誰？<br>扮演什麼角色我都會</h1>
+                <p data-aos="fade-right" data-aos-delay="400" class="fz-px-20 lh-banner-p mb-md-4">
+                    Facebook、Instagram、LINE 聊天機器人解決方案</p>
             </div>
-            <img src="images/home.svg" alt="" class="bannerImg">
+            <img data-aos="fade-left" src="images/home.svg" alt="" class="bannerImg">
         </section>
         <section class="platform text-center m-section">
-            <h2 class="mb-6">三大平台，我來搞定</h2>
+            <h2 data-aos="fade-down" class="mb-6">三大平台，我來搞定</h2>
             <ul class="d-flex justify-content-space-around">
-                <li class="platform-info">
+                <li data-aos="fade-right" class="platform-info">
                     <img src="images/messenger.svg" alt="" class="platform-img mb-3">
                     <h3 class="fz-3 mb-3">Facebook Messenger</h3>
                     <p class="color-platform-p">結合粉絲專頁，提高粉絲互動率<br>有效經營品牌社群</p>
                 </li>
-                <li class="platform-info">
+                <li data-aos="fade-right" data-aos-delay="200" class="platform-info">
                     <img src="images/line.svg" alt="" class="platform-img mb-3">
                     <h3 class="fz-3 mb-3">LINE 官方帳號</h3>
                     <p class="color-platform-p">融入日常生活，精準傳遞品牌資訊<br>打造個人化專屬服務</p>
                 </li>
-                <li class="platform-info">
+                <li data-aos="fade-right" data-aos-delay="400" class="platform-info">
                     <img src="images/instagram.svg" alt="" class="platform-img mb-3">
                     <h3 class="fz-3 mb-3">Instagram 商業帳號</h3>
                     <p class="color-platform-p">貼近粉絲，提升品牌自然聲量<br>行銷、抽獎一站完成</p>
@@ -59,31 +61,31 @@
             </ul>
         </section>
         <section class="situation text-center m-section ">
-            <h2 class="mb-2">任何的角色，我都能給</h2>
-            <p class="lh-banner-p mb-6">量身打造您想要的專屬服務，幫助您迅速判斷成效、並加快決策</p>
+            <h2 data-aos="fade-down" class="mb-2">任何的角色，我都能給</h2>
+            <p data-aos="fade-down" data-aos-delay="200" class="lh-banner-p mb-6">量身打造您想要的專屬服務，幫助您迅速判斷成效、並加快決策</p>
             <ul class="row">
-                <li class="col-3 col-sm-10 mb-sm-3">
+                <li data-aos="flip-left" data-aos-delay="200" class="col-3 col-md-10 mb-md-3">
                     <div class="card">
                         <img src="images/ch01.svg" alt="" class="card-img mb-2">
                         <h3 class="color-primary mb-2">活動主</h3>
                         <p class="pb-3">用戶數位足跡掌握在手<br>精準取得客戶輪廓，提供分析</p>
                     </div>
                 </li>
-                <li class="col-3 col-sm-10 mb-sm-3">
+                <li data-aos="flip-left" data-aos-delay="400" class="col-3 col-md-10 mb-md-3">
                     <div class="card">
                         <img src="images/ch02.svg" alt="" class="card-img mb-2">
                         <h3 class="color-primary mb-2">創作者</h3>
                         <p class="pb-3">自由設計互動腳本<br>輕鬆整合各項數據</p>
                     </div>
                 </li>
-                <li class="col-3 col-sm-10 mb-sm-3">
+                <li data-aos="flip-left" data-aos-delay="600" class="col-3 col-md-10 mb-md-3">
                     <div class="card">
                         <img src="images/ch03.svg" alt="" class="card-img mb-2">
                         <h3 class="color-primary mb-2">企業品牌</h3>
                         <p class="pb-3">多元資料整合，做出服務差異化<br>幫助企業加速決策</p>
                     </div>
                 </li>
-                <li class="col-3 col-sm-10 mb-sm-3">
+                <li data-aos="flip-left" data-aos-delay="800" class="col-3 col-md-10 mb-md-3">
                     <div class="card">
                         <img src="images/ch04.svg" alt="" class="card-img mb-2">
                         <h3 class="color-primary mb-2">其他</h3>
@@ -93,29 +95,29 @@
             </ul>
         </section>
         <section class="feature row">
-            <ul class="d-flex flex-wrap justify-content-space-between col-6 col-sm-12">
-                <li class="card p-4 mb-6 mr-2 mb-sm-4 mr-sm-0">
+            <ul class="d-flex flex-wrap justify-content-space-between col-6 col-md-12">
+                <li data-aos="zoom-out-right" class="card p-4 mb-6 mr-2 mb-md-4 mr-md-0">
                     <div class="round flex-center mr-10 mb-3">
                         <img src="images/icon01.svg" alt="">
                     </div>
                     <h3 class="fz-px-18 mb-2">無敵轉換術</h3>
                     <p class="mb-2">精準掌握客群來源<br>分析用戶轉化流程</p>
                 </li>
-                <li class="card p-4 mb-6 mr-2 mb-sm-4 mr-sm-0">
+                <li data-aos="zoom-out-right" data-aos-delay="200" class="card p-4 mb-6 mr-2 mb-md-4 mr-md-0">
                     <div class="round flex-center mr-10 mb-3">
                         <img src="images/icon02.svg" alt="">
                     </div>
                     <h3 class="fz-px-18 mb-2">聊天機器人</h3>
                     <p class="mb-2">66款聊天機器人模組<br>自由設計聊天流程</p>
                 </li>
-                <li class="card p-4 mb-6 mr-2 mb-sm-4 mr-sm-0">
+                <li data-aos="zoom-out-right" class="card p-4 mb-6 mr-2 mb-md-4 mr-md-0">
                     <div class="round flex-center mr-10 mb-3">
                         <img src="images/icon03.svg" alt="">
                     </div>
                     <h3 class="fz-px-18 mb-2">一站式訊息中心</h3>
                     <p class="mb-2">整合Messenger、LINE<br>和IG三大平台訊息</p>
                 </li>
-                <li class="card p-4 mb-6 mr-2 mb-sm-4 mr-sm-0">
+                <li data-aos="zoom-out-right" data-aos-delay="200" class="card p-4 mb-6 mr-2 mb-md-4 mr-md-0">
                     <div class="round flex-center mr-10 mb-3">
                         <img src="images/icon04.svg" alt="">
                     </div>
@@ -123,16 +125,18 @@
                     <p class="mb-2">自由選定特定受眾<br>精準推送群發訊息</p>
                 </li>
             </ul>
-            <div class="feature-text word-wrap-normal col-5 col-sm-12">
-                <h2 class="mb-2">快速了解客戶輪廓<br>建立品牌流量池</h2>
-                <p class="fz-px-18 mb-3">深入用戶日常，成為用戶貼身好友<br>精準傳遞品牌資訊，打造個人化專屬服務<br>不知不覺深入用戶生活，成為用戶貼心的好朋朋:D</p>
-                <a href="price.html" class="btn-primary color-white fz-px-18 px-4 py-px-12">方案費用</a>
+            <div class="feature-text word-wrap-normal col-5 col-md-12">
+                <h2 data-aos="fade-down" class="mb-2">快速了解客戶輪廓<br>建立品牌流量池</h2>
+                <p data-aos="fade-down" data-aos-delay="200" class="fz-px-18 mb-3">
+                    深入用戶日常，成為用戶貼身好友<br>精準傳遞品牌資訊，打造個人化專屬服務<br>不知不覺深入用戶生活，成為用戶貼心的好朋朋:D</p>
+                <a href="price.html" data-aos="fade-down" data-aos-delay="400"
+                    class="btn-primary color-white fz-px-18 px-4 py-px-12">方案費用</a>
             </div>
         </section>
         <section class="praise">
-            <h2 class="praise-title text-center">好評如潮</h2>
+            <h2 data-aos="fade-down" class="praise-title text-center">好評如潮</h2>
             <ul class="row mb-3 praise-list">
-                <li class="col-4 col-sm-12">
+                <li data-aos="zoom-in" class="col-4 col-md-12">
                     <div class="card px-4 pt-6 p-relative">
                         <div class="p-absolute praise-img">
                             <img src="images/user01.jpg" alt="">
@@ -151,7 +155,7 @@
                         </p>
                     </div>
                 </li>
-                <li class="col-4 col-sm-12">
+                <li data-aos="zoom-in" data-aos-delay="200" class="col-4 col-md-12">
                     <div class="card px-4 pt-6 p-relative">
                         <div class="p-absolute praise-img">
                             <img src="images/user02.jpg" alt="">
@@ -170,7 +174,7 @@
                         </p>
                     </div>
                 </li>
-                <li class="col-4 col-sm-12">
+                <li data-aos="zoom-in" data-aos-delay="400" class="col-4 col-md-12">
                     <div class="card px-4 pt-6 p-relative">
                         <div class="p-absolute praise-img">
                             <img src="images/user03.jpg" alt="">
@@ -202,13 +206,24 @@
     <div class="footerBanner">
         <img src="images/footer_sm.svg" alt="">
         <div class="container text-center">
-            <h2 class="mb-6 pt-12 pt-sm-3">\ 美好用戶體驗，從對話開始 /</h2>
-            <a href="price.html" class="btn-primary color-white fz-px-18 px-4 py-px-12">方案費用</a>
+            <h2 data-aos="fade-down" class="mb-6 pt-12 pt-sm-3">\ 美好用戶體驗，從對話開始 /</h2>
+            <a data-aos="fade-down" data-aos-delay="200" href="price.html"
+                class="btn-primary color-white fz-px-18 px-4 py-px-12">方案費用</a>
         </div>
     </div>
 
     <footer class="text-center copyright py-2">© 2022 chatTalker. All Rights Reserved.</footer>
 
+
+    <script src="js/all.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600, // 完成動畫所需的時間
+            easing: 'ease-out-back', // 動畫曲線
+            once: true, // 動畫是否只跑一次
+        });
+    </script>
 </body>
 
 </html>
