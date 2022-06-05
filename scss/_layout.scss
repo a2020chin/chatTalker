@@ -35,6 +35,14 @@ body{
     cursor: pointer;
     color: white;
 }
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 
 .header-sm-border{
     @include phone{
@@ -217,6 +225,7 @@ body{
     position: absolute;
     background: url(../images/ball03.svg) no-repeat;
     background-size: 361px 361px;
+    z-index: -1;
     top: 876px;
     left: -276px;
 }
@@ -236,10 +245,33 @@ body{
         background: #F7F9FD;
         border-radius: 0px 0px 0px 470px;
     }
+    .pirce-banner{
+        padding-top: 92px;
+        padding-bottom: 180px + $section-margin;
+    }
+    @include phone{
+        background: none;
+        &::before{
+            display: none;
+        }
+        .pirce-banner{
+            display: none;
+        }   
+    }
 }
-.pirce-banner{
-    padding-top: 92px;
-    padding-bottom: 180px + $section-margin;
+.pirce-title-sm{
+    display: none;
+    @include phone{
+        display: block;
+        margin-bottom: 60px;
+        &-banner{
+            padding-top: 48px;
+            padding-bottom: 361px;
+            background: url(../images/banner_sm.svg) no-repeat right top;
+            background-color: #F7F9FD;
+            border-radius: 0px 0px 0px 50%;
+        }
+    }
 }
 
 .program{
@@ -255,6 +287,35 @@ body{
             }
         }
     }
+    @include phone{
+        margin-bottom: 60px;
+        &-item{
+            margin-bottom: 1.5rem;
+        }
+        h3{
+            font-size: 24px;
+        }
+        &-box{
+            width: 139px;
+            padding: 16px;
+            white-space: nowrap;
+            p{
+                font-size: 12px;
+            }
+            h4{
+                font-size: 28px;
+            }
+        }
+        ol{
+            img{
+                width: 16px;
+                height: 14px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 
@@ -263,6 +324,9 @@ body{
     &-item{
         &-q{
             cursor: pointer;
+            h3{
+                font-weight: normal;
+            }    
             .minus{
                 display: none;
             }
@@ -290,5 +354,8 @@ body{
             display: block;
             transform: translateY(0px);
         }  
+    }
+    @include phone{
+        margin-bottom: 60px;
     }
 }

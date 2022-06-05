@@ -108,6 +108,22 @@
     }
 }
 
+@each $size, $size-value in $breakpoint {
+    @media screen and (max-width: $size-value) {
+        @for $distance from 0 through 12 {
+            .mx-#{$size}-#{$distance} {
+                margin-right: ($distance * 0.5) + rem;
+                margin-left: ($distance * 0.5) + rem;
+            }
+
+            .my-#{$size}-#{$distance} {
+                margin-top: ($distance * 0.5) + rem;
+                margin-bottom: ($distance * 0.5) + rem;
+            }
+        }
+    }
+}
+
 @each $size,  $size-value in $lineheight{
     .lh-#{$size}{
         line-height: $size-value;
@@ -172,9 +188,6 @@
 
 .fw-b{
     font-weight: bold;
-}
-.fw-n{
-    font-weight: normal;
 }
 
 .w-100{
