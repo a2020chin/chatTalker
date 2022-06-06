@@ -1,3 +1,6 @@
+:root {
+    --swiper-theme-color: #ffd153;
+}
 body{
     position: relative;
 }
@@ -149,7 +152,19 @@ body{
     }
 }
 
-
+//輪播設定
+.swiper{
+    overflow: visible;
+    overflow-x: clip; 
+}
+.swiper-pagination{
+    position: static;
+    margin-top: 24px;  
+}
+.swiper-pagination-bullet-active{
+    width: 20px;
+    border-radius: 8px;
+}
 
 .praise{
     margin-bottom: $section-margin;
@@ -180,26 +195,6 @@ body{
     }
 }
 
-
-
-.pages{
-    margin: 0 auto;
-    &-dot{
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        border-radius: 50px;
-        background: #DDDDDD;
-        cursor: pointer;
-        &:not(:last-of-type){
-            margin-right: 0.5rem;
-        }
-    }
-    >.active{
-        width: 16px;
-        background: #FFD153;
-    }
-}
 
 .footerBanner{
     position: relative;
