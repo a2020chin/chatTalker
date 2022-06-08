@@ -126,12 +126,10 @@ body{
 
 .situation{
     margin-bottom: $section-margin;
-    @include pad{
-        .row{
-            flex-direction: column;
-            align-items: center;
-        }
-    }
+
+    .row{
+        align-items: stretch;
+    }   
 }
 
 
