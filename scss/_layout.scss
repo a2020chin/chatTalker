@@ -126,7 +126,6 @@ body{
 
 .situation{
     margin-bottom: $section-margin;
-
     .row{
         align-items: stretch;
     }   
@@ -290,6 +289,7 @@ body{
         background: #F5F5F5;
         padding: 1.5rem 2rem;
         border-radius: 12px;
+        white-space:nowrap;
         h4{
             font-family: $font-secondary;
             sub{

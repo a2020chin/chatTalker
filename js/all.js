@@ -30,6 +30,7 @@ const price = {
 
 
 function btn_price_toggle (user, e){
+    e.preventDefault();
     document.querySelector('.active').classList.remove('active');
     e.target.classList.add('active');
     document.querySelector('#basic_user').innerHTML = `${user} <sub class="fw-b">位</sub>`;
@@ -38,10 +39,21 @@ function btn_price_toggle (user, e){
     document.querySelector('#normal_price').innerHTML = `${price[user]['normal_price']} <sub class="fw-b">TWD</sub>`;
 }
 
+let judge = 0;
 function que_toggle (que_num){
     const element = document.getElementById(`que_${que_num}`);
-    element.classList.toggle('active');
+    if (judge == 0){
+      element.classList.add('que_active');
+    }
+    if(judge == que_num){
+      element.classList.toggle('que_active');
+    }else{ 
+      document.querySelector('.que_active').classList.remove('que_active');
+      element.classList.add('que_active');
+    }
+    judge = que_num;
 }
+
 
 function initSwiper() {
     /* 

@@ -53,16 +53,21 @@
         <section class="text-center">
             <h2 data-aos="fade-down" data-aos-delay="200" class="mb-6 mb-md-3">彈性選擇，提供您選擇最適合的方案</h2>
             <ul class="d-flex btn-list mb-7">
-                <li data-aos="fade-up-right" data-aos-delay="200" onclick="btn_price_toggle('10000',event)"
-                    class="btn-outline active">10000位</li>
-                <li data-aos="fade-up-right" data-aos-delay="400" onclick="btn_price_toggle('15000',event)"
-                    class="btn-outline">15000位</li>
-                <li data-aos="fade-up-right" data-aos-delay="600" onclick="btn_price_toggle('20000',event)"
-                    class="btn-outline">20000位</li>
-                <li data-aos="fade-up-right" data-aos-delay="800" onclick="btn_price_toggle('25000',event)"
-                    class="btn-outline">25000位</li>
-                <li data-aos="fade-up-right" data-aos-delay="1000" onclick="btn_price_toggle('<25000',event)"
-                    class="btn-outline">>25000位</li>
+                <li data-aos="fade-up-right" data-aos-delay="200">
+                    <a href="#" onclick="btn_price_toggle('10000',event)" class="btn-outline active">10000位</a>
+                </li>
+                <li data-aos="fade-up-right" data-aos-delay="400">
+                    <a href="#" onclick="btn_price_toggle('15000',event)" class="btn-outline">15000位</a>
+                </li>
+                <li data-aos="fade-up-right" data-aos-delay="600">
+                    <a href="#" onclick="btn_price_toggle('20000',event)" class="btn-outline">20000位</a>
+                </li>
+                <li data-aos="fade-up-right" data-aos-delay="800">
+                    <a href="#" onclick="btn_price_toggle('25000',event)" class="btn-outline">25000位</a>
+                </li>
+                <li data-aos="fade-up-right" data-aos-delay="1000">
+                    <a href="#" onclick="btn_price_toggle('>25000',event)" class="btn-outline">>25000位</a>
+                </li>
             </ul>
             <div class="program row justify-content-center">
                 <div data-aos="zoom-out-right" data-aos-delay="400" class="col-5 col-md-12 program-item">
@@ -146,8 +151,8 @@
                 <li data-aos="fade-up" id="que_1" onclick="que_toggle('1')" class="card mb-2 que-item">
                     <div class="d-flex justify-content-space-between px-4 py-2 que-item-q">
                         <h3 class="fz-px-18">我要怎麼變更方案？</h3>
-                        <img src="images/icon_plus.svg" alt="" class="plus">
-                        <img src="images/icon_minus.svg" alt="" class="minus">
+                        <button class="plus"><img src="images/icon_plus.svg" alt=""></button>
+                        <button class="minus"><img src="images/icon_minus.svg" alt=""></button>
                     </div>
                     <div id="ans_1" class="que-item-a">
                         <p class="color-platform-p lh-que-ans px-4 pt-1 pb-4">請聯絡您的業務專員修改訂閱方案，我們將為您進行變更流程。</p>
@@ -157,8 +162,8 @@
                     class="card mb-2 que-item">
                     <div class="d-flex justify-content-space-between px-4 py-2 que-item-q">
                         <h3 class="fz-px-18">如果我沒有LINE官方帳號怎麼辦？</h3>
-                        <img src="images/icon_plus.svg" alt="" class="plus">
-                        <img src="images/icon_minus.svg" alt="" class="minus">
+                        <button class="plus"><img src="images/icon_plus.svg" alt=""></button>
+                        <button class="minus"><img src="images/icon_minus.svg" alt=""></button>
                     </div>
                     <div id="ans_2" class="que-item-a">
                         <p class="color-platform-p lh-que-ans px-4 pt-1 pb-4">請聯絡您的業務專員修改訂閱方案，我們將為您進行變更流程。</p>
@@ -168,8 +173,8 @@
                     class="card mb-2 que-item">
                     <div class="d-flex justify-content-space-between px-4 py-2 que-item-q">
                         <h3 class="fz-px-18">非上班日有客服支援嗎？</h3>
-                        <img src="images/icon_plus.svg" alt="" class="plus">
-                        <img src="images/icon_minus.svg" alt="" class="minus">
+                        <button class="plus"><img src="images/icon_plus.svg" alt=""></button>
+                        <button class="minus"><img src="images/icon_minus.svg" alt=""></button>
                     </div>
                     <div id="ans_3" class="que-item-a">
                         <p class="color-platform-p lh-que-ans px-4 pt-1 pb-4">

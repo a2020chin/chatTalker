@@ -67,7 +67,7 @@
         border-radius: 27px;
         margin-right: 16px;  
     }
-    >.active{
+    .active{
         background: map-get($color, "primary");
         color: map-get($color, "white");
     }

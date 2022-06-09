@@ -53,6 +53,12 @@ table {
   border-spacing: 0;
 }
 
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
 *,
 ::before,
 ::after {
@@ -2997,7 +3003,7 @@ table {
   margin-right: 16px;
 }
 
-.btn-list > .active {
+.btn-list .active {
   background: #56C4C5;
   color: #fff;
 }
@@ -3381,6 +3387,7 @@ body {
   background: #F5F5F5;
   padding: 1.5rem 2rem;
   border-radius: 12px;
+  white-space: nowrap;
 }
 
 .program-box h4 {
